@@ -66,10 +66,6 @@ checksum = "b4682ae6287fcf752ecaabbfcc7b6f9b72aa33933dc23a554d853aea8eea8635"
 [[package]]
 name = "c-call-rust"
 version = "0.1.0"
-
-[[package]]
-name = "c-call-rust-by-cbindgen"
-version = "0.1.0"
 dependencies = [
  "cbindgen",
 ]
@@ -376,10 +372,6 @@ checksum = "dbb5fb1acd8a1a18b3dd5be62d25485eb770e05afb408a9627d14d451bae12da"
 
 [[package]]
 name = "rust-call-c"
-version = "0.1.0"
-
-[[package]]
-name = "rust-call-c-by-bindgen"
 version = "0.1.0"
 dependencies = [
  "bindgen",

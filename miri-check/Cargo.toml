@@ -1,5 +1,5 @@
 [package]
-name = "ub-demo"
+name = "miri-check"
 version = "0.1.0"
 edition = "2021"
 

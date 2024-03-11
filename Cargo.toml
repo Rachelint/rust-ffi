@@ -6,13 +6,11 @@ edition = "2021"
 [workspace]
 members = [
 "c-call-rust",
-"c-call-rust-by-cbindgen",
 "rust-call-c",
-"rust-call-c-by-bindgen"
 ]
 
 # Miri doesn't support workspace now
-exclude = [ "ub-demo" ]
+exclude = [ "miri-check" ]
 
 [workspace.dependencies]
 cc = "1.0.73"

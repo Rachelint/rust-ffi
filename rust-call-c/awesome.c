@@ -1,9 +1,5 @@
 #include <stdio.h>
-
-typedef struct {
-  int a;
-  char *b;
-} Foo;
+#include "awesome.h"
 
 void say_foo(Foo foo) {
   printf("Foo { a = %d, b = %s}\n", foo.a, foo.b);

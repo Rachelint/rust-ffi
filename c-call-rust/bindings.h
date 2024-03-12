@@ -1,22 +1,17 @@
-#include <cstdarg>
-#include <cstdint>
-#include <cstdlib>
-#include <ostream>
-#include <new>
+#include <stdarg.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdlib.h>
 
-struct Foo {
+typedef struct Foo {
   int a;
   char *b;
-};
+} Foo;
 
-extern "C" {
+void call_from_c(void);
 
-void call_from_c();
+struct Foo *new_foo(void);
 
-Foo *new_foo();
+void free_foo(struct Foo *foo);
 
-void free_foo(Foo *foo);
-
-void say_foo(Foo *foo);
-
-} // extern "C"
+void say_foo(struct Foo *foo);
